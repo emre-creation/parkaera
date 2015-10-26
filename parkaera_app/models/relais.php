@@ -1,15 +1,15 @@
 <?php
 
- class Capteurs extends CI_Model {
+ class Relais extends CI_Model {
 	 
 	 public function __construct()
 	 {
 		 parent::__construct();
 	 }
 
-	 public function get_list(){
+	 public function get_relais(){
 
-	 	$query = $this->db->get('capteurs');
+	 	$query = $this->db->get('relais');
 
 	 	$results = $query->result();
 

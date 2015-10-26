@@ -58,5 +58,4 @@ class Service extends CI_Controller {
 		$this->capteurs->get_list();
 
 	}
-		
 }

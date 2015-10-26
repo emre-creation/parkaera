@@ -1,15 +1,15 @@
 <?php
 
- class Capteurs extends CI_Model {
+ class Session extends CI_Model {
 	 
 	 public function __construct()
 	 {
 		 parent::__construct();
 	 }
 
-	 public function get_list(){
+	 public function create_session(){
 
-	 	$query = $this->db->get('capteurs');
+	 	$query = $this->db->get('session');
 
 	 	$results = $query->result();
 
