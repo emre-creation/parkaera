@@ -50,5 +50,13 @@ class Service extends CI_Controller {
 			echo($json);
 		}
 	}
+
+	public function list_capteurs(){
+
+		$this->load->model('capteurs');
+
+		$this->capteurs->get_list();
+
+	}
 		
 }
